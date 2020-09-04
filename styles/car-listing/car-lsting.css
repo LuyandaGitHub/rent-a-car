@@ -10,7 +10,7 @@ body, .main-content .logo-container {
           justify-content: center;
 }
 
-.header .search-container .search-form, .content-container .side-nav .profile-details {
+.header .search-container .search-form, .content-container .side-nav .profile-details, .content-container .main-content .listings-container .listing {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -259,5 +259,47 @@ body {
 .content-container .main-content {
   width: 90%;
   margin: 0 auto;
+}
+
+.content-container .main-content .listings-container {
+  width: 100%;
+}
+
+.content-container .main-content .listings-container .listing {
+  height: 170px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.content-container .main-content .listings-container .listing .listing-image {
+  width: 30%;
+  height: 100%;
+}
+
+.content-container .main-content .listings-container .listing .listing-image img {
+  height: 100%;
+}
+
+.content-container .main-content .listings-container .listing .listing-description {
+  width: 70%;
+  padding-left: 20px;
+}
+
+.content-container .main-content .listings-container .listing .listing-description h3 {
+  margin-bottom: 5px;
+}
+
+.content-container .main-content .listings-container .listing .listing-description h4 {
+  margin-bottom: 5px;
+}
+
+.content-container .main-content .listings-container .listing .listing-description P {
+  margin-bottom: 5px;
+}
+
+.content-container .main-content .listings-container .listing .listing-description .book-btn {
+  color: #ffffff;
+  background: #ff0000;
 }
 /*# sourceMappingURL=car-lsting.css.map */
