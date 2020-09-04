@@ -168,7 +168,15 @@ body {
   border: 1px solid #000000;
 }
 
+@media (min-width: 700px) {
+  .header .search-container {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
 .header .search-container .search-form .search-bar {
+  width: 100%;
   padding: 5px;
   border: none;
   border-radius: 0;
@@ -187,12 +195,39 @@ body {
   width: 14px;
 }
 
+@media (min-width: 700px) {
+  .header .booking-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .header .booking-container img {
   height: 40px;
 }
 
+@media (min-width: 700px) {
+  .header .booking-container img {
+    width: 40px;
+  }
+}
+
 .header .booking-container span {
   display: none;
+}
+
+@media (min-width: 700px) {
+  .header .booking-container span {
+    display: block;
+  }
+}
+
+.content-container {
+  padding-top: 40px;
 }
 
 .content-container .side-nav {
@@ -202,9 +237,9 @@ body {
   height: 100vh;
   position: fixed;
   padding-top: 70px;
-  background: rgba(239, 239, 239, 0.9);
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
+  background: rgba(239, 239, 239, 0.9);
 }
 
 .content-container .side-nav.active {
@@ -262,6 +297,10 @@ body {
 .content-container .main-content {
   width: 90%;
   margin: 0 auto;
+}
+
+.content-container .main-content h2 {
+  margin-bottom: 10px;
 }
 
 .content-container .main-content .listings-container {

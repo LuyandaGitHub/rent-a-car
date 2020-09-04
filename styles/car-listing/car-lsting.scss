@@ -21,10 +21,16 @@ body {
         border-radius: 3px;
         border: 1px solid $color-black;
         
+        @media (min-width: 700px) {
+            width: 100%;
+            max-width: 300px;
+        }
+        
         .search-form {
             @extend %flex-start;
             
             .search-bar {
+                width: 100%;
                 padding: 5px;
                 border: none;
                 border-radius: 0;
@@ -46,18 +52,33 @@ body {
     }
 
     .booking-container {
+        @media (min-width: 700px) {
+            display: flex;
+            align-items: center;
+        }
 
         img {
             height: 40px;
+
+            @media (min-width: 700px) {
+                width: 40px;
+            }
         }
 
         span {
             display: none;
+            
+            @media (min-width: 700px) {
+                display: block;
+            }
         }
+
     }
 }
 
 .content-container {
+    padding-top: 40px;
+
     .side-nav {
         top: 0;
         left: -400px;
@@ -65,9 +86,9 @@ body {
         height: 100vh;
         position: fixed;
         padding-top: 70px;
-        background: rgba($color-off-white, .9);
         transition: all .5s ease-in-out;
-
+        background: rgba($color-off-white, .9);
+        
         &.active {
             left: 0;
         }
@@ -124,6 +145,10 @@ body {
     .main-content {
         width: 90%;
         margin: 0 auto;
+
+        h2 {
+            margin-bottom: 10px;
+        }
 
         .listings-container {
             width: 100%;
