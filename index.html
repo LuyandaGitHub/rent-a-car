@@ -7,8 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <header class="header">
+    <div class="main-content">
+        <div class="logo-container">
+            <h1 class="logo">Rent-A-Car</h1>
+        </div>
+        <form class="login-form active">
+            <label for="username"><span>Username</span>
+                <input type="text" class="username-inp" name="username">
+            </label>
+            <label for="password"><span>Password</span>
+                <input type="password" class="password-inp" name="password">
+            </label>
+            <button type="submit" class="login-btn btn"><a href="car-listing.html">LOGIN</a></button>
+            <sub>Dont have an account? <button class="form-toggle">a</button></sub>
+        </form>
+        <form class="reg-form">
+            <label for="username"><span>Username</span>
+                <input type="text" class="username-inp" name="username">
+            </label>
+            <label for="password"><span>Password</span>
+                <input type="password" class="password-inp" name="password">
+            </label>
+            <label for="c-password"><span>Confirm Password</span>
+                <input type="password" class="c-password-inp" name="c-password">
+            </label>
+            <button type="submit" class="reg-btn btn"><a href="car-listing.html">REGISTER</a></button>
+            <sub>Allready have an account? <button class="form-toggle">a</button></sub>
+        </form>
+    </div>
 
-    </header>
+    <script src="scripts/main.js"></script>
 </body>
 </html>

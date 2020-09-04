@@ -1,1 +1,121 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+body, .main-content .logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: Nunito, sans-serif;
+}
+
+body .btn {
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+body .btn a {
+  text-decoration: none;
+}
+
+.main-content {
+  width: 70%;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.main-content .logo-container {
+  height: 100px;
+  max-width: 200px;
+  border-radius: 3px;
+  background: #ff0000;
+  margin: 0 auto 20px auto;
+}
+
+.main-content .logo-container .logo {
+  color: #ffffff;
+}
+
+.main-content .login-form,
+.main-content .reg-form {
+  display: none;
+}
+
+.main-content .login-form.active,
+.main-content .reg-form.active {
+  display: block;
+}
+
+.main-content .login-form label,
+.main-content .reg-form label {
+  text-align: right;
+}
+
+.main-content .login-form label span,
+.main-content .reg-form label span {
+  text-align: start;
+}
+
+.main-content .login-form label input,
+.main-content .reg-form label input {
+  width: 100%;
+  padding: 10px;
+  display: block;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  border: 1px solid #000000;
+}
+
+.main-content .login-form .login-btn,
+.main-content .login-form .reg-btn,
+.main-content .reg-form .login-btn,
+.main-content .reg-form .reg-btn {
+  width: 100%;
+  margin-bottom: 20px;
+  color: #ffffff;
+  background: #ff0000;
+}
+
+.main-content .login-form .login-btn a,
+.main-content .login-form .reg-btn a,
+.main-content .reg-form .login-btn a,
+.main-content .reg-form .reg-btn a {
+  color: #ffffff;
+}
+
+.main-content .login-form sub,
+.main-content .reg-form sub {
+  display: block;
+  text-align: center;
+}
+
+.main-content .login-form sub .form-toggle,
+.main-content .reg-form sub .form-toggle {
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+  color: #ff0000;
+  background: transparent;
+  border-bottom: 1px solid #ff0000;
+}
+/*# sourceMappingURL=main.css.map */
