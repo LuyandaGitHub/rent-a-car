@@ -2,8 +2,6 @@
 
 body {
     display: block;
-
-
 }
 
 .header {
@@ -61,12 +59,14 @@ body {
 
 .content-container {
     .side-nav {
-        top: 70px;
+        top: 0;
         left: -400px;
         width: 400px;
         height: 100vh;
         position: fixed;
-        background: rgba($color-black, .3);
+        padding-top: 70px;
+        background: rgba($color-off-white, .9);
+        transition: all .5s ease-in-out;
 
         &.active {
             left: 0;
@@ -92,7 +92,7 @@ body {
             }
 
             span {
-                color: $color-white;
+                color: $color-grey;
             }
         }
 
@@ -113,7 +113,7 @@ body {
 
                     a {
                         font-size: 20px;
-                        color: $color-white;
+                        color: $color-grey;
                         text-decoration: none;
                     }
                 }
@@ -124,7 +124,6 @@ body {
     .main-content {
         width: 90%;
         margin: 0 auto;
-        // max-width: 600px;
 
         .listings-container {
             width: 100%;
@@ -168,5 +167,41 @@ body {
                 }
             }
         }
+    }
+}
+
+.menu-toggle {
+    width: 50px;
+    right: 25px;
+    bottom: 25px;
+    height: 50px;
+    position: fixed;
+    border-radius: 50%;
+    background: $color-red;
+    transform: rotate(45deg);
+    transition: all .5s ease-in-out;
+  
+    &.open {
+        transform: rotate(0);
+    }
+
+    &::before, 
+    &::after {
+        top: 50%;
+        left: 25%;
+        width: 50%;
+        content: '';
+        height: 4px;
+        position: absolute;
+        background: $color-white;
+        transform: translate(-50%, -50%);
+    }
+
+    &::before {
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        transform: rotate(135deg);
     }
 }

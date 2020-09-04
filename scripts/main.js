@@ -2,9 +2,11 @@ const regForm = document.querySelector('.reg-form');
 const loginForm = document.querySelector('.login-form');
 const formToggleBtns = document.querySelectorAll('.form-toggle');
 
+
 formToggleBtns.forEach(btn => {
     btn.addEventListener('click', toggleForm);
 })
+
 
 function toggleForm(e) {
     e.preventDefault();

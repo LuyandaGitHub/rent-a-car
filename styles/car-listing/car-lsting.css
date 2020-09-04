@@ -196,12 +196,15 @@ body {
 }
 
 .content-container .side-nav {
-  top: 70px;
+  top: 0;
   left: -400px;
   width: 400px;
   height: 100vh;
   position: fixed;
-  background: rgba(0, 0, 0, 0.3);
+  padding-top: 70px;
+  background: rgba(239, 239, 239, 0.9);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .content-container .side-nav.active {
@@ -228,7 +231,7 @@ body {
 }
 
 .content-container .side-nav .profile-details span {
-  color: #ffffff;
+  color: #707070;
 }
 
 .content-container .side-nav .side-menu {
@@ -252,7 +255,7 @@ body {
 
 .content-container .side-nav .side-menu ul li a {
   font-size: 20px;
-  color: #ffffff;
+  color: #707070;
   text-decoration: none;
 }
 
@@ -301,5 +304,46 @@ body {
 .content-container .main-content .listings-container .listing .listing-description .book-btn {
   color: #ffffff;
   background: #ff0000;
+}
+
+.menu-toggle {
+  width: 50px;
+  right: 25px;
+  bottom: 25px;
+  height: 50px;
+  position: fixed;
+  border-radius: 50%;
+  background: #ff0000;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.menu-toggle.open {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.menu-toggle::before, .menu-toggle::after {
+  top: 50%;
+  left: 25%;
+  width: 50%;
+  content: '';
+  height: 4px;
+  position: absolute;
+  background: #ffffff;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.menu-toggle::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.menu-toggle::after {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 /*# sourceMappingURL=car-lsting.css.map */
