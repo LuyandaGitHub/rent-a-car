@@ -38,6 +38,10 @@ body .btn a {
   text-decoration: none;
 }
 
+body img {
+  width: 100%;
+}
+
 .main-content {
   width: 70%;
   margin: 0 auto;
