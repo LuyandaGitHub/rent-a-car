@@ -221,4 +221,8 @@ body img {
   background: transparent;
   border-bottom: 1px solid #ff0000;
 }
-/*# sourceMappingURL=main.css.map */
+
+body {
+  display: block;
+}
+/*# sourceMappingURL=booking-car.css.map */
