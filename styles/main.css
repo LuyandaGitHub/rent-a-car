@@ -10,11 +10,7 @@ body, .main-content .logo-container {
           justify-content: center;
 }
 
-<<<<<<< HEAD
-.header .search-container .search-form {
-=======
 .header .search-container .search-form, .content-container .side-nav .profile-details, .content-container .main-content .listings-container .listing {
->>>>>>> 6cf079477c401ed0ded7ae4d9e5e3eeb765aa119
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,8 +221,6 @@ body img {
   background: transparent;
   border-bottom: 1px solid #ff0000;
 }
-<<<<<<< HEAD
-=======
 
 .content-container {
   padding-top: 40px;
@@ -418,5 +412,4 @@ body img {
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
 }
->>>>>>> 6cf079477c401ed0ded7ae4d9e5e3eeb765aa119
 /*# sourceMappingURL=main.css.map */
