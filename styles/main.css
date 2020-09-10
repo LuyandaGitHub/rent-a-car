@@ -67,9 +67,12 @@ body img {
 }
 
 .header {
+  top: 0;
+  left: 0;
   width: 100%;
   height: 70px;
   padding: 0 25px;
+  position: fixed;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
@@ -223,6 +226,7 @@ body img {
 }
 
 .content-container {
+  width: 100%;
   padding-top: 40px;
 }
 

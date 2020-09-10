@@ -67,9 +67,12 @@ body img {
 }
 
 .header {
+  top: 0;
+  left: 0;
   width: 100%;
   height: 70px;
   padding: 0 25px;
+  position: fixed;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
@@ -222,9 +225,8 @@ body img {
   border-bottom: 1px solid #ff0000;
 }
 
-<<<<<<< HEAD
-=======
 .content-container {
+  width: 100%;
   padding-top: 40px;
 }
 
@@ -415,7 +417,6 @@ body img {
           transform: rotate(135deg);
 }
 
->>>>>>> 6cf079477c401ed0ded7ae4d9e5e3eeb765aa119
 body {
   display: block;
 }

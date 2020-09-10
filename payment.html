@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rent A Car | Payment page</title>
+    <link rel="stylesheet" href="styles\payment\payment.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <h1 class="logo">Rent-A-Car</h1>
+        </div>
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" class="search-bar">
+                <button class="btn search-btn">
+                    <img src="images\search_icon.png" alt="search icon">
+                </button>
+            </form>
+        </div>
+        <div class="booking-container">
+            <img src="images\calendar_icon.png" alt="calendar icon">
+            <span>Booking History</span>
+        </div>
+    </header>
+    <div class="content-container">
+        <div class="side-nav">
+            <div class="profile-details">
+                <div class="profile-image">
+                    <img src="images\profile.jpg" alt="profile picture">
+                </div>
+                <span>@not_luyanda</span>
+            </div>
+            <nav class="side-menu">
+                <ul>
+                    <li><a href="#">Vehicles</a></li>
+                    <li><a href="#">Booking History</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Log out</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-content">
+            <h2>Confirm Booking...</h2>
+            <div class="form-container">
+                <form class="payment-form">
+                    <label for="card-holder">
+                        <span>Card holder</span>
+                        <input type="text" name="card-holder">
+                    </label>
+                    <label for="card-number">
+                        <span>Card number</span>
+                        <input type="text" name="card-number">
+                    </label>
+                    <br>
+                    <label for="exp-month">
+                        <span>Expiration month</span>
+                        <input type="text" name="exp-month">
+                    </label>
+                    <label for="exp-year">
+                        <span>Expiration year</span>
+                        <input type="text" name="exp-year">
+                    </label>
+                    <label for="cvv">
+                        <span>CVV</span>
+                        <input type="text" name="cvv">
+                    </label>
+                    <button type="submit" class="btn submit-btn">Make Payment</button>
+                </form>
+            </div>
+        </div>
+        <div class="menu-toggle"></div>
+</body>
+</html>
