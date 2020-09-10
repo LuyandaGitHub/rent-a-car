@@ -1,0 +1,41 @@
+@import "../main.scss";
+
+body {
+    display: block;
+}
+
+.content-container {
+    .main-content {
+        padding-top: 100px;
+
+        .form-container {
+            width: 100%;
+            padding: 10px;
+            border-radius: 3px;
+            border: 1px solid rgba($color-black, .3);
+
+            label {
+                input {
+                    width: 100%;
+                    padding: 10px;
+                    display: block;
+                    border-radius: 3px;
+                    margin-bottom: 20px;
+                    border: 1px solid $color-black;
+                }
+            }
+    
+            .book-btn {
+                width: 100%;
+                margin-bottom: 20px;
+                color: $color-white;
+                background: $color-red;
+    
+                a {
+                    color: $color-white;
+                }
+            }
+    
+        }
+    }
+}
